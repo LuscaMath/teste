@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap"); /*Configurações gerais da página*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container01 {
+  background-image: url(../../imagens/main-section-bg.jpg);
+}
+
+/*Configurações do header*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.2rem 4rem;
+  font-family: "Rubik", sans-serif;
+}
+.header .logo h2 {
+  color: #ffffff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.header .navigation {
+  display: flex;
+  gap: 4.5rem;
+}
+.header .navigation a {
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-mobile .fa-bars {
+  font-size: 1.9rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.menuMobile-items {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #000;
+  display: block;
+  opacity: 0;
+  transition: 1s;
+}
+
+.menuMobile-items.show {
+  opacity: 1;
+}
+
+.menuMobile-items.hidde {
+  opacity: 0;
+}
+
+.menuMobile-items a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*Configurações da seção principal*/
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 90vh;
+  color: #ffffff;
+}
+.main-section .main-section-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+.main-section .main-section-subtitle {
+  font-size: 35px;
+}
+.main-section .btn-custom {
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+.main-section .free-pik-content {
+  margin-top: 1rem;
+}
+.main-section .free-pik-content a {
+  color: #ffffff;
+  line-height: 2rem;
+}
+
+/*Configurações da seção de skills*/
+/*Media querys*/
+@media (max-width: 991.98px) {
+  .header {
+    justify-content: space-around;
+    padding: 2rem 0;
+  }
+  .header .navigation {
+    display: none;
+  }
+  .header .menu-mobile {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
